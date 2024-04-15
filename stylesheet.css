@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: black;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navsection{
+    display: flex;
+    gap: 20px;
+}
+img{
+    height:30px;
+    width: 100px;
+}
+.navsection ul{
+    color: white;
+    list-style-type: none;
+}
+
+
+
+
+
+
+.home-menu{
+   
+        background-color:  rgb(34, 37, 49);
+        height: 200px;
+        width: 30%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        transition: .3s ease;
+  
+}
+.home-menu1{
+   
+    position: absolute;
+    right: 20px;
+
+}
+.home-menu ul li{
+    list-style-type: none;
+    color: white;
+}
+.home-menu.active{
+    right: 0;
+}
+.navbar .homeburger{
+    display: flex;
+    position: relative;
+}
+.homeburger span{
+   
+    background-color: white;
+    position: absolute;
+    border-radius: 25px;
+    height: 4px;
+    width: 40px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    transition: .3s ease;
+}
+.homeburger span:nth-child(1){
+    top:25%;
+}
+.homeburger span:nth-child(3){
+    top:75%;
+}
+.homeburger.active span:nth-child(1){
+    top:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.homeburger.active span:nth-child(2){
+    opacity: 0;
+}
+.homeburger.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+h1,p,h2,h3,h6,h4,h3,h5{
+   color:  rgba(229, 229, 229, 1);
+   font-weight: 400px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    font-size: smaller;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    gap: 30px;
+}
+
+.hero div h1{
+    font-size: 50px;
+    font-weight: 400px;
+    
+}
+.hero div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+button{
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);    
+}
+.bn{
+    transition: all 2s ease-in 4s;
+    cursor: pointer;
+}
+form{
+    width: 500px;
+    background: linear-gradient(black,grey );
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 20px 20px;
+}
+.classs{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.submit{
+   height: 30px;
+   width: 300px;
+   font-size: larger;
+   color: blanchedalmond;
+   background-color: darkslateblue;
+   border: none;
+   border-radius: 9px;
+    
+}
+input{
+    padding: 10px;
+    width: 400px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 9px;
+}
+.form1{
+    display: none;
+}
+.form{
+    margin-top: 20px;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fo{
+    display: block;
+}
+
+
+
+
+.section2 h2{
+    font-size: 40px;
+}
+
+.section2{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    gap: 70px;
+}
+.wholeboxes{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+}
+.thesection{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.box1{
+    /* border:1px solid  #5FA4E6; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   text-align: center;
+}
+.box1 h4{
+    font-size: 25px;
+}
+.thesection1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+}
+
+.market1 h5{
+    font-size: 40px;
+    font-weight: 50;
+}
+.market2 h2{
+    font-size: 15px;
+    font-weight:100;
+}
+
+.marketsection{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.market{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image1 img{
+    height:300px;
+    width: 400px;
+}
+
+
+.company{
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.company div img{
+    height: 30px;
+    width: 30px;
+}
+.company div{
+    display: flex;
+    gap: 20px;
+}
+.company h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+
+.pargraph{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.jointeam{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jointeam h3{
+    font-size:40px ;
+}
+
+
+hr{
+    margin-top: 100px;
+    height: 1px;
+}
+.footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.grteam{
+    display: flex;
+    width: 80%;
+    /* border: 1px solid white; */
+ 
+    align-items: center;
+    justify-content: space-between;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    justify-content:center;
+    margin-left: 140px;
+    /* border: 1px solid white; */
+    
+}
+.nd1{
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 140px;
+    margin-bottom: 50px;
+}
+
+
+
+.section-5b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sec-5a-ii{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+ .sec-5b-iii{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} 
+.sec-5b{
+    padding-bottom: 100px;
+
+}
+.coinsContainer{
+    /* background-color:#141619; */
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .coinsContainer1{
+    /* background-color:greenyellow; */
+    text-align: center;
+    /* background-color: #141619; */
+  }
+.table tr{
+    row-gap: 100px;
+  }
+#bitCoin{
+    background-color: #665DCD;
+    cursor: pointer;
+}
+#ethereum{
+    /* background-color: yellowgreen; */
+    cursor: pointer;
+}
+#xrp{
+    background-color: orange;
+    cursor: pointer;
+}
+#total{
+    background-color: yellowgreen;
+}
+
+.coinsContainer h3{
+    color: white;
+}
